@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rosary</h1>
+    <p class="date"></p>
+    <script> 
+    //tracks the date
+        let n = new Date();
+        let y = n.getFullYear();
+        let m = n.getMonth()+1;
+        let d = n.getDate();
+        document.getElementsByClassName("date")[0].textContent = `${d}/${m}/${y}`;
+    </script>
+    <!--has record of the mysteries and prayers in english and latin-->
+    <!--calendar checklist after each day has been completed-->
+    <!--tracks streaks and gives badges-->
+    <!--times your sessions and records how long you have said the rosary for over time-->
+</body>
+</html>
